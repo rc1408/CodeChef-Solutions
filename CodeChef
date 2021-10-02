@@ -2,7 +2,6 @@ ATM Problem Code: HS08TEST
 
 -----------SoluTion-----------
 
-# cook your dish here
 x,y = map(float,input().split())   # x = Withdrawing Amount , y = Total Balance In The Account
 if x%5 == 0:      #  The cash machine will only accept the transaction if X is a multiple of 5
     if (x+0.5)<=y:           
