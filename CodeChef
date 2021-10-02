@@ -1,0 +1,15 @@
+ATM Problem Code: HS08TEST
+
+-----------SoluTion-----------
+
+# cook your dish here
+x,y = map(float,input().split())   # x = Withdrawing Amount , y = Total Balance In The Account
+if x%5 == 0:      #  The cash machine will only accept the transaction if X is a multiple of 5
+    if (x+0.5)<=y:           
+        y = y-(x + 0.50)  #For each successful withdrawal the bank charges 0.50 $US
+        print(y)
+    else:
+        y > x
+        print(y)
+else:
+    print(y)
